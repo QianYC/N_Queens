@@ -14,7 +14,7 @@ public class Solution {
 	public static int count=1;
 	
 	public static void trackBack(int pos){
-		if(pos<0||count>num+1)//ÒòÎªcount³õÊ¼ÖµÎª1£¬¶ø»ØËİ»á»ØËİ¸ù²¿n´Î£¬ÍË³öÊ±countÓ¦¸ÃÎªn+1´Î£¡£¡£¡
+		if(pos<0||count>num+1)//å› ä¸ºcountåˆå§‹å€¼ä¸º1ï¼Œè€Œå›æº¯ä¼šå›æº¯æ ¹éƒ¨næ¬¡ï¼Œé€€å‡ºæ—¶countåº”è¯¥ä¸ºn+2æ¬¡ï¼ï¼ï¼
 			return;
 		
 		if(put(pos)){
@@ -26,7 +26,7 @@ public class Solution {
 		}
 		trackBack(pos);
 	}
-	//ÅĞ¶ÏÊÇ·ñÄÜÂä×Ó
+	//åˆ¤æ–­æ˜¯å¦èƒ½è½å­
 	public static boolean put(int pos){
 		if(pos==num)
 			return false;
@@ -57,7 +57,7 @@ public class Solution {
 		}
 		return flag;
 	}
-	//¼ì²éÊÇ·ñÔÚÍ¬Ò»Ö±Ïß
+	//æ£€æŸ¥æ˜¯å¦åœ¨åŒä¸€ç›´çº¿
 	public static boolean judge(int pos,int val){
 		boolean flag=true;
 		for(int i=0;i<pos;i++){
